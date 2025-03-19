@@ -1,0 +1,84 @@
+/* na parte de css eu vou usar MARGIN(determina o espaçamento de fora)
+       e PADDING( estilos de preenchimento dentro do conteudo ) */
+
+       *{
+        margin: 0;
+        padding: 0;
+    }
+    /* -sans-serif ele deixa a letra normal(sem nenhuma formatação */
+    /* :ROOT serve para colocar uma certa formatação para o site inteiro. */
+    :root {
+        font-family: sans-serif;
+    }
+    /* -none serve para tirar o sublinhado dos <a> </a> */
+    /* "a" ele tira o sublinhado apenas do "a" */
+    a {
+        text-decoration: none;
+    }
+    
+    .header{
+        background-color: rgb(207, 194, 6);
+        /* o PADDING-INLINE serve para delimitar um certo espaço */
+        padding-inline: 16px;
+        border-radius: 10px;
+    }
+    /* MAX-WIDTH vai definir uma largura maxima da navbar */
+    .nav{
+        max-width: 1000px;
+        /* HEIGHT vai definir uma aultura de Xpx para a navbar */
+        height: 75px;
+        /* MARGIN-INLINE: AUTO; comunica o navegador que é para distribuir de forma automatica as margens laterais  */
+        margin-inline: auto;
+        /* DISPLAY FLEX fazem os itens ficarem um do lado do outro */
+        display: flex;
+        /* JUSTIFY-CONTENT SPACE-BETWEEN coloca um espaçamento entre os itens como a logo e os dados */
+        justify-content: space-between;
+        /* aliongn-items center alinha os itens no centro, ele só fuciona se o DISPLAY for FLEX */
+        align-items: center;
+    }
+    
+    
+    .logo{
+        /* FONT-SIZE aumenta ou diminui o tamanho da logo */
+        font-size: 30px;
+        color: rgb(0, 0, 0) ;
+    }
+    
+    .nav-list{
+        /* DISPLAY FLEX transforma elementos em um conteiner flexivel, podendo assim alterar seu layout */
+        display: flex;
+        /* espaçamento estre os nomes */
+        gap: 100px;
+        /* ele retira as bolinhas e os traços */
+        list-style: none;
+    }
+    
+    .nav-list a{
+        /* serve para aumentar os nomes */
+        font-size: 25px;
+        color: rgb(90, 90, 90);
+        /* serve para determinar o range de algum icone ou palavra */
+        padding-block: 8px;
+    
+    }
+    
+    .nav-list a{
+        border-bottom: 3px solid #ffa705;
+    }
+    .nav-item a{
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    .hero{
+        /* altura e largura da imagem  */
+        height: calc(250vh - 75px);
+        /* isto coloca a imagem como um fundo no site */
+        background-image: url("../img/imagem.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* nav bar teste  */
+    width: 100%; /* DISPLAY FLEX transforma elementos em um conteiner flexivel, podendo assim alterar seu layout */ display: flex; /* aliongn-items center alinha os itens no centro, ele só fuciona se o DISPLAY for FLEX */ align-items: center; /* JUSTIFY-CONTENT SPACE-BETWEEN coloca um espaçamento entre os itens como a logo e os dados */ justify-content: space-between;

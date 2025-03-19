@@ -1,0 +1,58 @@
+/* na parte de css eu vou usar MARGIN(determina o espaçamento de fora)
+       e PADDING( estilos de preenchimento dentro do conteudo ) */
+
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        /* cor de de fundo no site */
+        background-color: #daddb6;
+    }
+    
+    #centralizado{
+        display: flex;
+        /* alinha os itens horizontalmente */
+        justify-content: center;
+        /* alinha os itens verticalmente */
+        align-items: center;
+    }
+
+    .imgcenter{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* parte do footer */
+    .conteiner{
+        display: flex;
+        /* ele serve para organizar elementos flexiveis em colunas
+        de cima para baixo */
+        flex-direction: column ; 
+          /* ela é usada para garantir que um elemento sempre tenha uma altura minima 
+          mesmo que o conteudo não ocupe todo o espaço */
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+            /* esta configuração conteiner main serve para deixar o footer travado 
+            em baixo da main */
+    .conteiner  main {
+        background-color: transparent;
+        border: 0;
+        /* ele serve para controlar os elementos em um flex conteiner */
+        flex: 1;
+    }
+
+    /* configuração da main na pagina principal */
+  #home {
+    display: flex;
+
+  }
+
+  #cta {
+    /* ele vai definir a largura  */
+    width: 35%;
+  } 

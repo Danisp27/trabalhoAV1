@@ -1,0 +1,49 @@
+header{
+    width: 100%;
+    padding: 28px 8px;
+}
+
+#navbar{
+    /* MAX-WIDTH vai definir uma largura maxima da navbar */
+    max-width: 1000px; 
+    /* HEIGHT vai definir uma aultura de Xpx para a navbar */ 
+    height: 75px; 
+    /* MARGIN-INLINE: AUTO; comunica o navegador que é para distribuir
+     de forma automatica as margens laterais  */
+    margin-inline: auto; 
+    /* DISPLAY FLEX fazem os itens ficarem um do lado do outro */ 
+    display: flex; 
+    /* JUSTIFY-CONTENT SPACE-BETWEEN coloca um espaçamento
+     entre os itens como a logo e os dados */ 
+    justify-content: space-between; 
+    /* aliongn-items center alinha os 
+    itens no centro, ele só fuciona se o DISPLAY for FLEX */ 
+    align-items: center;
+
+}
+
+#nav_logo{
+    font-size: 40px;
+    color: indigo;
+}
+
+#nav_list{
+/* deixa um do lado do outro */
+    display: flex;
+    /* tira a formatação de bolinha */
+    list-style: none;
+    /* espaçamento entre os links */
+    gap: 60px;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: black;
+    /* mudança de espessura da fonte */
+    font-weight: 600;
+}
+
+.nav-item.active a {
+    color: #1d1d1d;
+    border-bottom: 3px solid blueviolet;
+}
