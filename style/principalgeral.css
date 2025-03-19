@@ -23,6 +23,12 @@
     .imgcenter{
         display: flex;
         justify-content: center;
+        margin-left: 200px;
+    }
+
+    .size {
+      font-size: 22px;
+      display: flex;
     }
 
     /* parte do footer */
@@ -58,3 +64,23 @@
     /* define a altura */
     height: 30%;
   } 
+
+  .separador {
+    display: flex;
+  
+    /* serve para dar uma distandia entre os textos */
+    margin-bottom: 50px;
+    flex-direction: column;
+  }
+
+  .separador div {
+    display: flex;
+    /* ele faz o texto ou outro objeto ficar do lado esquerdo */
+    justify-content: flex-start;
+    /* serve para dar uma distandia entre os textos */
+    margin-bottom: 50px;
+    /* distancia entre cada tag */
+    gap: 10px;
+    /* o ROW faz com que a direção da tag fique em linha  */
+    flex-direction: row;
+  }
