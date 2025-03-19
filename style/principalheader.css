@@ -43,7 +43,14 @@ header{
     font-weight: 600;
 }
 
-.nav-item.active a {
+/* .nav-item.active a {
+    color: #1d1d1d;
+    border-bottom: 3px solid blueviolet;
+} */
+
+/* :hover serve para quando passar o mouse aparecer algo  */
+.nav-item a:hover {
     color: #1d1d1d;
     border-bottom: 3px solid blueviolet;
 }
+
