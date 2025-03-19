@@ -23,11 +23,10 @@
     .imgcenter{
         display: flex;
         justify-content: center;
-        margin-left: 200px;
     }
 
     .size {
-      font-size: 22px;
+      font-size: 50px;
       display: flex;
     }
 
@@ -55,6 +54,14 @@
     /* configuração da main na pagina principal */
   #home {
     display: flex;
+    justify-content: space-around;
+
+  }
+
+  #cta {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
   }
 
@@ -64,6 +71,22 @@
     /* define a altura */
     height: 30%;
   } 
+
+  #cta .title{
+      font-size: 4rem;
+      color: black;
+  }
+  #cta .title span{
+    color: indigo ;
+  }
+
+  .separador{
+    font-size: 3rem;
+    color: black;
+
+  }
+
+
 
   .separador {
     display: flex;
@@ -84,3 +107,11 @@
     /* o ROW faz com que a direção da tag fique em linha  */
     flex-direction: row;
   }
+
+
+
+  /* parte da página CONTATO */
+
+    .social-media-buttons{
+      background-color: aqua;
+    }
