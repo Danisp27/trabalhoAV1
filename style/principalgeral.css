@@ -16,6 +16,7 @@
       flex-direction: column;
     }
 
+    
     .content{
       flex: 1 0 auto;
     }
@@ -60,7 +61,7 @@
         flex-direction: column ;
           /* ela é usada para garantir que um elemento sempre tenha uma altura minima
           mesmo que o conteudo não ocupe todo o espaço */
-        min-height: 70vh;
+        min-height: 100vh;
         justify-content: center;
         align-items: center;
     }
@@ -149,11 +150,11 @@
   .separador2 img{
     display: flex;
     margin-bottom: 70px;
-    justify-content: space-around;
+    justify-content: center;
     width: 20%;
     border-radius: 50px;
     border-style: groove;
-
+    align-content: center;
   }
 
 
@@ -236,4 +237,17 @@
       border-radius: 100%;
       /* border: 1px solid blueviolet; */
 
+    }
+
+    /* parte de NOVIDADES */
+
+    #conteiner-carta{
+      /* altura  */
+      height: 100vh;
+      /* largura */
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url();
     }
