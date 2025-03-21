@@ -124,16 +124,35 @@
       justify-content: space-around;
       gap: 50px;
       padding: 1rem;
-      background-color: blueviolet;
+      
       margin: 1rem;
       border-radius: 50px;
-      border: 1px solid blueviolet;
-     
+      
+    }
+
+    .social-media-buttons a:hover{
+      color: white;
+      border-bottom: blueviolet;
+    }
+
+    
+    
+
+    .social-media-buttons a{
+      height: 40px;
+      width: 40px;
+    }
+
+    .social-media-buttons div{
+
+      height: 40px;
+      width: 40px;
+    
     }
  
     .social-media-buttons img {
-      height: 2rem;
-      width: 2rem;
+      height: 40px;
+      width: 40px;
     }
 
     #phone_button{
@@ -141,18 +160,19 @@
       justify-content: space-around;
       gap: 50px;
       padding: 1rem;
-      background-color: blueviolet;
       margin: 1rem;
       border-radius: 50px;
-      border: 1px solid blueviolet;
+    }
 
+    #phone_button{
+      
     }
 
     #phone_button img{
       height: 40px;
       width: 40px;
       border-radius: 100%;
-      border: 1px solid blueviolet;
+      /* border: 1px solid blueviolet; */
 
     }
   
