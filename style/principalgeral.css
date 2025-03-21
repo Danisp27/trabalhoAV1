@@ -16,7 +16,7 @@
       flex-direction: column;
     }
 
-    
+
     .content{
       flex: 1 0 auto;
     }
@@ -263,7 +263,7 @@
         height: 350px;
         /* cor de fundo  */
         background-color: transparent;
-        
+        /* ele cria essa animação 3d da carta */
         perspective: 1000px;
       }
 
@@ -276,18 +276,21 @@
       }
 
       .virar-carta-interna{
+        /* faz com que os elementos sejam posicionados nas suas respectivas posições */
         position: relative;
+        /* isso define o tempo que a ação de "girar" vai levar para acontecer  */
         transition: transform 1s;
+        /* ele faz com que os elementos filhos tenham a perspectiva 3d */
         transform-style: preserve-3d ;
-        
+
       }
 
       .frente,
       .verso{
         position: absolute;
         backface-visibility: hidden;
-        
-        
+
+
       }
 
       .imagem-carta{
@@ -310,7 +313,7 @@
 
       }
 
-      .alinhamento a :hover{
-        color: blueviolet;
-        border-bottom: 3px solid white;
+      .alinhamento a:hover{
+        color: white;
+        border-bottom: blueviolet;
       }
