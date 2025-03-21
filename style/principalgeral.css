@@ -57,7 +57,7 @@
     justify-content: space-around;
 
   }
-
+    /*  */
   #cta {
     display: flex;
     flex-direction: column;
@@ -112,6 +112,47 @@
 
   /* parte da página CONTATO */
 
-    .social-media-buttons{
-      background-color: aqua;
+    .contato {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      
     }
+
+    .social-media-buttons{
+      display: flex;
+      justify-content: space-around;
+      gap: 50px;
+      padding: 1rem;
+      background-color: blueviolet;
+      margin: 1rem;
+      border-radius: 50px;
+      border: 1px solid blueviolet;
+     
+    }
+ 
+    .social-media-buttons img {
+      height: 2rem;
+      width: 2rem;
+    }
+
+    #phone_button{
+      display: flex;
+      justify-content: space-around;
+      gap: 50px;
+      padding: 1rem;
+      background-color: blueviolet;
+      margin: 1rem;
+      border-radius: 50px;
+      border: 1px solid blueviolet;
+
+    }
+
+    #phone_button img{
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+      border: 1px solid blueviolet;
+
+    }
+  
