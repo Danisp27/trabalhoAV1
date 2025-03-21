@@ -8,9 +8,31 @@
     }
 
     body{
-        /* cor de de fundo no site */
-        background-color: #daddb6;
+      height: 100%;
+      background-color: #daddb6;
     }
+    body{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content{
+      flex: 1 0 auto;
+    }
+
+    .footer{
+      flex-shrink: 0;
+      background-color: black;
+    }
+    /* body{
+      display: flex;
+      min-height: 100%;
+         /* cor de de fundo no site  
+        background-color: #daddb6;
+        flex-direction: column;
+    } */
+
+  
     
     #centralizado{
         display: flex;
@@ -26,7 +48,7 @@
     }
 
     .size {
-      font-size: 50px;
+      font-size: 20px;
       display: flex;
     }
 
@@ -38,10 +60,17 @@
         flex-direction: column ; 
           /* ela é usada para garantir que um elemento sempre tenha uma altura minima 
           mesmo que o conteudo não ocupe todo o espaço */
-        min-height: 100vh;
+        min-height: 70vh;
         justify-content: center;
         align-items: center;
     }
+
+
+
+
+
+
+
             /* esta configuração conteiner main serve para deixar o footer travado 
             em baixo da main */
     .conteiner  main {
@@ -80,7 +109,7 @@
     color: indigo ;
   }
 
-  .separador{
+  .separador1{
     font-size: 3rem;
     color: black;
 
@@ -88,24 +117,43 @@
 
 
 
-  .separador {
+  .separador1 {
     display: flex;
   
     /* serve para dar uma distandia entre os textos */
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     flex-direction: column;
   }
 
-  .separador div {
+  .separador1 div {
     display: flex;
     /* ele faz o texto ou outro objeto ficar do lado esquerdo */
     justify-content: flex-start;
     /* serve para dar uma distandia entre os textos */
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     /* distancia entre cada tag */
     gap: 10px;
     /* o ROW faz com que a direção da tag fique em linha  */
     flex-direction: row;
+  }
+
+  .separador2{
+    display: flex;
+    margin-bottom: 70px;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 40px;
+    padding: 40px;
+  }
+
+  .separador2 img{
+    display: flex;
+    margin-bottom: 70px;
+    justify-content: space-around;
+    width: 20%;
+    border-radius: 50px;
+    border-style: groove;
+    
   }
 
 
@@ -127,6 +175,10 @@
       
       margin: 1rem;
       border-radius: 50px;
+      background-color: rgb(207, 194, 6);
+      /* o PADDING-INLINE serve para delimitar um certo espaço */
+      padding-inline: 16px;
+      border-radius: 10px;
       
     }
 
@@ -162,17 +214,26 @@
       padding: 1rem;
       margin: 1rem;
       border-radius: 50px;
+      background-color: rgb(207, 194, 6);
+      /* o PADDING-INLINE serve para delimitar um certo espaço */
+      padding-inline: 16px;
+      border-radius: 10px;
     }
 
-    #phone_button{
-      
+    #phone_button p:hover{
+      color: white;
+        border-bottom: blueviolet;
+    }
+
+    #phone_button p{
+      height: 40px;
+      width: 40px;
     }
 
     #phone_button img{
       height: 40px;
       width: 40px;
-      border-radius: 100%;
-      /* border: 1px solid blueviolet; */
+      border-radius: 100%; 
+      border: 1px solid blueviolet;
 
     }
-  
