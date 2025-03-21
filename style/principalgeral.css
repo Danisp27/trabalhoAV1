@@ -246,8 +246,71 @@
       height: 100vh;
       /* largura */
       width: 100%;
+      /* uma pré definição para ajustar os itens do seu site */
       display: flex;
+      /* alinha os elementos em layouts e flexbox */
       align-items: center;
+      /* ajusta no centro */
       justify-content: center;
-      background-image: url();
+      /* serve para colocar uma imagem de fundo */
+      /* background-image: url(''); */
     }
+
+      .virar-carta{
+        /* largura */
+        width: 300px ;
+        /* altura */
+        height: 350px;
+        /* cor de fundo  */
+        background-color: transparent;
+        
+        perspective: 1000px;
+      }
+
+      .virar-carta:hover .virar-carta-interna{
+        transform: rotateY(-180deg);
+      }
+
+      .virar-carta .verso{
+        transform: rotateY(-180deg) scale(4);
+      }
+
+      .virar-carta-interna{
+        position: relative;
+        transition: transform 1s;
+        transform-style: preserve-3d ;
+        
+      }
+
+      .frente,
+      .verso{
+        position: absolute;
+        backface-visibility: hidden;
+        
+        
+      }
+
+      .imagem-carta{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+      }
+
+      .alinhamento div{
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        margin-bottom: 20px;
+        flex-direction: row;
+      }
+
+      .alinhamento a{
+        text-decoration: none;
+
+      }
+
+      .alinhamento a :hover{
+        color: blueviolet;
+        border-bottom: 3px solid white;
+      }
