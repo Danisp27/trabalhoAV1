@@ -222,7 +222,7 @@
 
     #phone_button p:hover{
       color: white;
-        /* border-bottom: blueviolet; */
+        border-bottom: blueviolet;
     }
 
     #phone_button p{
