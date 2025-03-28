@@ -35,7 +35,7 @@
 
 
 
-    #centralizado{
+    .centralizado{
         display: flex;
         /* alinha os itens horizontalmente */
         justify-content: center;
@@ -135,21 +135,20 @@
     /* distancia entre cada tag */
     gap: 10px;
     /* o ROW faz com que a direção da tag fique em linha  */
-    flex-direction: row;
+    flex-direction: row; 
   }
 
   .separador2{
     display: flex;
-    margin-bottom: 70px;
+   
     justify-content: space-around;
     gap: 10px;
-    margin: 40px;
-    padding: 40px;
+   
   }
 
   .separador2 img{
     display: flex;
-    margin-bottom: 70px;
+    
     justify-content: center;
     width: 20%;
     border-radius: 50px;
@@ -302,7 +301,7 @@
 
       .alinhamento div{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         gap: 10px;
         margin-bottom: 20px;
         flex-direction: row;
@@ -316,4 +315,25 @@
       .alinhamento a:hover{
         color: white;
         border-bottom: blueviolet;
+      }
+
+
+      .centralizarportfólio{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .alinhar1{
+        display: flex ;
+        justify-content: space-between;
+      }
+
+
+      /* uma parte do sobre mim */
+
+      .centro1sobre{
+        margin: 30px;
       }
